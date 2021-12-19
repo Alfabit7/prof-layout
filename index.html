@@ -1,0 +1,210 @@
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    </head>
+
+    <body>
+
+   
+    <header>
+
+    <a href="#" class="logo"><img src="./img/logo.svg" alt="logo"></a>
+    <!--  При нажатии на лупу предполагется выполнения поиска по сайту и возможно работа скрипта поэтому заворачиваю в тег <botton>
+        Вопрос: это правильно или неправильно?-->
+    <button>  <img src="./img/loupe.svg" alt="loupe" > </button>
+    
+    <!-- Вопрос есть ли практический смысл оборачивать три ниже стоящих элемента <button> и два <a> в тег <UL>? -->
+    <button>  <img src="./img/burger.svg" alt="burger"> </button>
+    <a href="#" class="menu"><img src="./img/log-in.svg" alt="log-in"></a>
+    <a href="#" class="menu"><img src="./img/cart.svg" alt="cart"></a>
+
+
+    <nav>
+        <h2>menu</h2>
+        <!-- Вставляем крестик закрытия burger меню -
+        Вопрос это нужно делать или закрытие burger меню будет реализовано каким-то другим образом-->
+        <button><img src="./img/cross.svg" alt="cross"></button>
+
+        <ul>
+            <li>
+                <a href="#">man</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="">Denim</a></li>
+                        <li><a href="">T-Shirts</a></li>
+                    </ul>
+            </li>
+
+            <li>
+                <a href="#">woman</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="">Polos</a></li>
+                        <li><a href="">T-Shirts</a></li>
+                        <li><a href="">Shirts</a></li>
+                    </ul>
+            </li>
+
+            <li>
+                <a href="#">KIDS</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="">Polos</a></li>
+                        <li><a href="">T-Shirts</a></li>
+                        <li><a href="">Shirts</a></li>
+                        <li><a href="">Bags</a></li>
+                    </ul>
+            </li>
+        </ul>   
+    </nav>
+
+    </header>
+    <main>
+    <section>
+    <img src="./img/men.jpg" alt="men">
+    <!-- Добавляем красную линию как на макете -->
+    <img src="./img/line.png" alt="line">
+    <h1> the brand of luxerious fashion </h1>
+
+    </section>
+
+<figure>
+    <!-- поскольку я предполагаю, что надписи будут служить переходом в определнный, каталог, то заворачиваю элементы li в тег <a href=""></a> 
+        figure, вместо sectiom потому что смысл особо не теряется при замене картинки -->
+    <ul>
+        <li>
+            <a href="#"><img src="./img/formen.jpg" alt="formen">
+            <p>30% off </p>
+            <h2>for women</h2>
+            </a>
+        </li>
+
+        <li>
+            <a href="#"><img src="./img/forwomen.jpg" alt="forwomen">
+            <p>hot deal </p>
+            <h2>for men</h2> 
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="./img/forkids.jpg" alt="forkids">
+            <p>new arrivals</p>
+            <h2> for kids</h2> 
+            </a>
+        </li>
+    </ul>
+
+    <a href="#"><img src="./img/accesories.jpg" alt="accesories">
+        <p>luxirous & trendy</p>
+        <h2> accesories</h2> 
+    </a>
+</figure>
+
+
+<section>
+    <h3>Fetured Items</h3>
+    <p>Shop for items based on what we featured in this week</p>
+    <ul>
+        <li>
+        <!-- Предполагаю, что клик по картинке ведет к преходу на карточку товара поэтому заворачиваю в тег <a> 
+            Вопрос правильно это или нет-->
+
+            <a href="#"><img src="./img/product-1.jpg" alt="product-1">
+            <h4>ELLERY X M'O CAPSULE</h4>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p>$52.00</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="#"><img src="./img/product-2.jpg" alt="product-2">
+            <h4>ellery x m'o capsule</h4>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p>$52.00</p>
+        </a>
+        </li>
+        
+        <li>
+            <a href="#"><img src="./img/product-3.jpg" alt="product-3">
+            <h4>ellery x m'o capsule</h4>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p>$52.00</p>
+            </a>
+        </li>
+
+        <li>
+            <a href=""><img src="./img/product-4.jpg" alt="product-4">
+            <h4>ellery x m'o capsule</h4>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p>$52.00</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+            <img src="./img/product-5.jpg" alt="product-5">
+            <h4>ellery x m'o capsule</h4>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p>$52.00</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="#"> 
+            <img src="./img/product-6.jpg" alt="product-6">
+            <h4>ellery x m'o capsule</h4>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p>$52.00</p>
+            </a>
+        </li>
+    </ul>
+
+    <button>Browse All Product</button>
+
+</section>
+
+<section>
+    <ul>
+        <li>
+            <img src="./img/auto.svg" alt="auto">
+            <h4>Free Delivery</h4>
+            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </li>
+        <li>
+            <img src="./img/gear.svg" alt="gear">
+            <h4>Sales & discounts</h4>
+            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </li>
+        <li>
+            <img src="./img/crown.svg" alt="crown">
+            <h4>Quality assurance</h4>
+            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </li>
+    </ul>  
+</section>
+
+<footer>
+    <img src="./img/face.png" alt="face">
+    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+
+    <h5>subscribe for our newletter and promotion</h5>
+    <div class="forma">forma</div>
+
+    <p>&copy;    2021  Brand  All Rights Reserved.</p>
+    <!-- Вопрос есть ли практический смысл оборачивать четыре ниже стоящих элемента <a> в тег <UL>? -->
+    <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
+    <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
+    <a href="#"><img src="./img/pinterest.svg" alt="pinterest"></a>
+    <a href="#"><img src="./img/twitter.svg" alt="twitter"></a>
+</footer>
+
+</main>
+ </body>
+    </html>
