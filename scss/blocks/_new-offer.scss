@@ -1,0 +1,40 @@
+.new-offer {
+	margin: 0 0 63px 0;
+	display: flex;
+	position: relative;
+}
+
+.new-offer__wrap {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	background-color: $pink-bkg;
+	position: relative;
+}
+
+.new-offer__title-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.new-offer__title {
+	font-size: 40px;
+	padding: 0 0 0 16px;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 58px;
+	text-transform: uppercase;
+	border-left: 12px solid $pink-color;
+	margin: 0 0 0 64px;
+}
+
+.new-offer__subtitle {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38px;
+	display: block;
+}
+
+.new-offer__title_subtitle-pink {
+	color: $pink-color;
+}
