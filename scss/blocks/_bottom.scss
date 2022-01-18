@@ -11,6 +11,11 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+
+	@include tablet {
+		flex-direction: column;
+		margin: 48px 0 64px 0;
+	}
 }
 
 .bottom__img {
@@ -36,4 +41,10 @@
 .bottom__text {
 	text-align: center;
 	color: #fbfbfb;
+}
+
+.bottom__text {
+	@include tablet {
+		margin: 0 0 48px 0;
+	}
 }

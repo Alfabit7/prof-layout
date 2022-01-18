@@ -1,0 +1,29 @@
+@mixin font ($font-size: 14px, $line-height: 16px, $font-weight: 400, $font-style: normal) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    line-height: $line-height;
+}
+
+@mixin flex-center($display:flex, $justify-content:center, $align-items:center, $flex-direction:row) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+
+
+// Микисины для адаптива
+// $widt-tablet: 1599px;
+// $width_mobile: 767px;
+@mixin tablet {
+    @media (max-width:$widt-tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:$width_mobile) {
+        @content;
+    }
+}
