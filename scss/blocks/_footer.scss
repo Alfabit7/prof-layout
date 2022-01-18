@@ -1,0 +1,166 @@
+.footer-block {
+	background-image: url(../img/footer-bkg.png);
+	min-height: 448px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.footer__img-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__text {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	width: 360px;
+	min-height: 100px;
+	text-align: center;
+	padding: 20px 0 0 0;
+	color: #222224;
+}
+
+.footer__form-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__title {
+	text-align: center;
+	color: #222224;
+	width: 557px;
+	min-height: 61px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	padding: 0 0 32px 0;
+}
+
+.footer__subtitle {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 40px;
+	display: block;
+}
+
+/* форма начало  */
+.footer__form {
+	display: flex;
+}
+
+.footer__input {
+	padding: 0 0 0 22px;
+	background: #e1e1e1;
+	max-width: 226px;
+	min-height: 49px;
+	border: none;
+	border-radius: 50em 0 0 50em;
+	background: #e1e1e1;
+	box-sizing: border-box;
+}
+
+.footer__input::placeholder {
+	line-height: 17px;
+	font-weight: 400;
+	color: #222224;
+	opacity: 0.67;
+}
+
+.footer__form:hover .footer__input,
+.footer__form:hover .footer__submit {
+	border: 1px solid black;
+}
+
+.footer__form:hover .footer__submit {
+	border-left: none;
+}
+
+.footer__form:hover .footer__input {
+	border-right: none;
+}
+
+.footer__input:focus {
+	outline: none;
+	color: $pink-color;
+	text-transform: uppercase;
+}
+
+.footer__input:focus::placeholder {
+	visibility: hidden;
+}
+
+.footer__submit {
+	max-width: 100px;
+	min-height: 49px;
+	border: none;
+	border-radius: 0 50em 50em 0;
+	background: #f16d7f;
+	color: #ffffff;
+	line-height: 17px;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+.footer__submit:hover {
+	color: $white;
+	background-color: $black;
+}
+
+.footer__submit:active {
+	color: $black;
+	background-color: $white;
+}
+
+/* форма конец */
+.footer__social {
+	background: #222224;
+	min-height: 79px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__copy {
+	color: #fbfbfb;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.footer__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer__item {
+	padding: 0 0 0 7px;
+}
+
+.footer__icon {
+	fill: black;
+	background-color: $white;
+	width: 32px;
+	height: 32px;
+}
+
+.footer__icon:hover {
+	fill: $white;
+	background-color: $pink-color;
+}
+
+.footer__icon:active {
+	fill: $pink-color;
+	background-color: $white
+}
+
+.footer__link:hover>.footer__icon {
+	fill: $pink-color;
+}
