@@ -2,6 +2,8 @@
 	margin: 0 0 63px 0;
 	display: flex;
 	position: relative;
+
+
 }
 
 .new-offer__wrap {
@@ -15,6 +17,14 @@
 .new-offer__title-wrap {
 	display: flex;
 	flex-wrap: wrap;
+	min-height: 363px;
+	align-items: center;
+
+	@include mobile {
+		// width: 100%;
+		// justify-content: center;
+		@include font($font-size: 38px, $line-height:46px, $font-weight: 900, $font-style: normal)
+	}
 }
 
 .new-offer__title {
@@ -26,6 +36,15 @@
 	text-transform: uppercase;
 	border-left: 12px solid $pink-color;
 	margin: 0 0 0 64px;
+
+	@include tablet {
+		@include font($font-size:44px, $line-height: 52px, $font-weight:900);
+		margin: 0 0 0 40px;
+	}
+
+	@include mobile {
+		@include font($font-size:38px, $line-height: 46px, $font-weight:900);
+	}
 }
 
 .new-offer__subtitle {
@@ -33,8 +52,27 @@
 	font-weight: 700;
 	line-height: 38px;
 	display: block;
+
+	@include tablet {
+		@include font($font-size:44px, $line-height: 52px, $font-weight:900);
+	}
+
+	@include mobile {
+		@include font($font-size:38px, $line-height: 46px, $font-weight:900);
+	}
 }
 
 .new-offer__title_subtitle-pink {
 	color: $pink-color;
+}
+
+.new-offer__img {
+	@include tablet {
+		width: 50%;
+		object-fit: cover;
+	}
+
+	@include mobile {
+		display: none;
+	}
 }

@@ -1,16 +1,42 @@
 .footer-block {
 	background-image: url(../img/footer-bkg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	min-height: 448px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
+
+
+	@include tablet {
+		flex-direction: column;
+	}
+
+	@include mobile {
+		min-height: 550px;
+	}
+}
+
+.footer-block:background-image {
+	@include mobile {
+		width: 100%;
+	}
 }
 
 .footer__img-wrap {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@include tablet {
+		padding: 54px 0 48px 0;
+		width: 100%;
+	}
+
+	@include mobile {
+		width: 100%;
+	}
 }
 
 .footer__text {
@@ -29,6 +55,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@include mobile {
+		padding: 0 0 109px 0;
+	}
 }
 
 .footer__title {
@@ -41,6 +71,19 @@
 	font-size: 18px;
 	line-height: 28px;
 	padding: 0 0 32px 0;
+	width: 100%;
+}
+
+.footer__form {
+	display: flex;
+
+	@include tablet {
+		padding: 0 0 140px 0;
+	}
+
+	@include mobile {
+		padding: 0 0 27px 0;
+	}
 }
 
 .footer__subtitle {
@@ -51,9 +94,7 @@
 }
 
 /* форма начало  */
-.footer__form {
-	display: flex;
-}
+
 
 .footer__input {
 	padding: 0 0 0 22px;
@@ -106,6 +147,7 @@
 	line-height: 17px;
 	font-weight: 400;
 	box-sizing: border-box;
+	padding: 0 0;
 }
 
 .footer__submit:hover {
@@ -119,12 +161,21 @@
 }
 
 /* форма конец */
+
 .footer__social {
 	background: #222224;
 	min-height: 79px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@include tablet {
+		padding: 0 32px;
+	}
+
+	@include mobile {
+		flex-direction: column-reverse;
+	}
 }
 
 .footer__copy {
@@ -132,12 +183,30 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
+
+	@include mobile {
+		text-align: center;
+		padding: 0 0 9px 0;
+	}
+}
+
+.footer__list-wrap {
+	width: 300px;
 }
 
 .footer__list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+
+	@include tablet {
+		justify-content: right;
+	}
+
+	@include mobile {
+		justify-content: center;
+		margin: 43px 0 40px 0;
+	}
 }
 
 .footer__item {

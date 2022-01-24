@@ -1,0 +1,75 @@
+.specification {
+    outline: 1px solid #EAEAEA;
+    min-height: 601px;
+    position: relative;
+    transform: translate(0, -120px);
+    width: 1140px;
+    background-color: $white;
+}
+
+.specification__title-h2,
+.specification__title-h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.specification__title-h2 {
+    @include font($font-weight: 300);
+    color: $pink-color;
+    padding: 64px 0 0 12px;
+    // text-decoration: underline;
+    // text-underline-offset: 12px; // отсутп линии подчеркиваняи от текста
+    // text-decoration-thickness: 4px; //толщина подчеркивания
+    // text-decoration-width: 10px;
+}
+
+.specification__title-h3 {
+    color: #4D4D4D;
+    @include font($font-size:18px, $line-height:22px, $font-weight: 300);
+    margin: 12px 0 048px;
+}
+
+.specification__hr-pink {
+    width: 63px;
+    height: 3px;
+    color: $pink-color;
+    margin: 0 auto;
+}
+
+.specification__price {
+    text-align: center;
+    margin: 32px 0 0 0;
+    color: $pink-color;
+    @include font($font-size:24px, $line-height:29px, $font-weight: 300);
+}
+
+.specification__hr-gray {
+    width: 641px;
+    margin: 65px auto;
+}
+
+.specification__text {
+    @include font ($font-weight:300);
+    color: #5E5E5E;
+    max-width: 555px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.specification__cart-btn {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid $pink-color;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 49px);
+    margin-bottom: 50px;
+
+}
+
+.specification__icon {
+    width: 211px;
+    min-height: 47px;
+    fill: $pink-color;
+    outline: none;
+}

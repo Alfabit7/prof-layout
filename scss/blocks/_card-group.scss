@@ -1,0 +1,42 @@
+.card-group {
+    padding: 0;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    min-height: 581px;
+    max-width: 360px;
+    // background-clip: border-box;
+    // border: 1px solid rgba(0, 0, 0, 0.125);
+    // border-radius: 0.25rem;
+}
+
+@media (max-width:767px) {
+    .card-hidden {
+        display: none;
+    }
+}
+
+.card-title {
+    text-transform: uppercase;
+    padding: 25px 0 13px 18px;
+    color: #000000;
+}
+
+.card-text {
+    padding: 0 0 18px 17px;
+    color: #5d5d5d;
+}
+
+.card-price {
+    padding: 0 0 20px 19px;
+    color: #f16d7f;
+    font-size: 16px;
+    line-height: 19px;
+}

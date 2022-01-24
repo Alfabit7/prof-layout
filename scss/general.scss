@@ -6,8 +6,12 @@ body {
     max-width: 1600px;
 }
 
+.sprite {
+    display: none;
+}
+
 .container {
-    max-width: 1140px;
+    max-width: 71%;
     margin: 0 auto;
 }
 
@@ -21,4 +25,17 @@ body {
     padding: 0;
     clip-path: inset(50%);
     margin: -1px;
+}
+
+
+@media (max-width: $widt-tablet) {
+    .container {
+        width: 736px;
+    }
+}
+
+@media(max-width: $width-mobile) {
+    .container {
+        width: 375px;
+    }
 }
