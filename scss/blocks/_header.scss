@@ -52,10 +52,6 @@
 			margin: 37px 0 0 34px;
 		}
 
-		// &_list {
-		// 	margin: 0 0 0 34px;
-		// }
-
 		&_item {
 			margin: 12px 0 11px 34px;
 		}
@@ -71,6 +67,12 @@
 		fill: $white;
 		display: block;
 	}
+
+	main>&__btn:active~.carousel-control-next,
+	main>&__btn:focus~.carousel-control-next {
+		display: none;
+	}
+
 
 	&__btn>svg {
 		border: none;

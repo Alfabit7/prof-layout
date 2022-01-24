@@ -1,0 +1,33 @@
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-secondary {
+    color: #6F6E6E;
+    text-transform: uppercase;
+    @include font();
+}
+
+.btn-secondary:hover {
+    outline: none;
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {}
+
+
+.btn-check:checked+.btn-secondary,
+.btn-check:active+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary.active,
+.show>.btn-secondary.dropdown-toggle {
+    color: #6F6E6E;
+    border-color: $pink-color;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #6F6E6E;
+}

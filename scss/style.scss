@@ -1,10 +1,16 @@
-@import './reset.scss';
-@import './variables.scss';
-@import './general.scss';
-@import './mixin';
+@import './reset.scss'; // Подключаем файл сброса стилей 
+@import './variables.scss'; //Подключаем переменные 
+@import './general.scss'; // Основные стили 
+@import './mixin'; //подключаем миксины
+@import './blocks/font'; //Подключаем шрифты
+@import './bootstrap'; // подлючаем стили bootstrap
+// Подключаем стили блоками (секциями) 
 @import './blocks/header.scss';
 @import './blocks/new-offer.scss';
 @import './blocks/partition.scss';
 @import './blocks/catalog.scss';
 @import './blocks/bottom.scss';
 @import './blocks/footer.scss';
+@import './blocks/specification';
+@import './blocks/dropdown';
+@import './blocks/card-group';
